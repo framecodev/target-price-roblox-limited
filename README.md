@@ -7,4 +7,5 @@ and it also have auto buy if you want it quick (only for v2)</p>
 
 install the <a href="https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm?hl=id">[Cookie-Editor]</a> extension to find the cookie from your roblox account
 
+``Warning``\e[0;31m`` dont send or show your roblox security cookie
 
