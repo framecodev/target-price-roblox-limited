@@ -1,7 +1,3 @@
-@import '@fontsource/fredoka-one';
-p{
-  font-family: 'Fredoka One', cursive;
-}
 
 # Target price for roblox limited
 
