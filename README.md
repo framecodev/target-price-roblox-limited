@@ -1,10 +1,7 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Handjet:wght@300&display=swap');
-  p{
-    font-family: 'Fredoka', sans-serif;
-    font-family: 'Handjet', cursive;
-  }
-</style>
+@import '@fontsource/fredoka-one';
+p{
+  font-family: 'Fredoka One', cursive;
+}
 
 # Target price for roblox limited
 
