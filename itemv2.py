@@ -1,3 +1,6 @@
+# Important: do not change or remove any code function
+# -- Made by Leffy --
+
 import requests
 import time
 import json
@@ -27,8 +30,8 @@ def check_item_price(item_id, target_price):
         time.sleep(60)
 
 # item u want to buy
-
+# example here
 item_id_1 = 12345678 # set the item id taht you want to purchase
-target_price_1 = 1000 # set the target price minimum is 5-10% example item price is 1500 and the target 1000 then set it to 1000
-
+target_price_1 = 1000 # set the target price example item price is 1500 and the target 1000 then set it to 1000.
+# note: Don't set the price too low
 check_item_price(item_id_1, target_price_1)
