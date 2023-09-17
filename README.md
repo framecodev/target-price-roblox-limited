@@ -4,7 +4,7 @@
 
 <h2>this program allows you to check the price of roblox limited items, 
   and also has a target price function that you will buy and want, 
-  and also has auto purchase (this is only for itemv2)
+  and also has auto purchase (this is only for itemv2)<br><br>
 
 install the <a href="https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm?hl=id">[Cookie-Editor]</a> extension to find the cookie from your roblox account</h2>
 
