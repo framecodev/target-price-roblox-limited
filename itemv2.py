@@ -19,7 +19,6 @@ def get_item_price(item_id):
     return lowest_price
 
 def check_item_price(item_id, target_price):
-    print("The program checker is running")
     rbx = RobloxAPI()
     with open('WARNING.json') as file:
         cookie_data = json.load(file)
@@ -30,8 +29,11 @@ def check_item_price(item_id, target_price):
         if price is not None and price < target_price:
             print(f"The item {item_id} is now available for {price} Robux!")
             if not rbx.owns_asset(item_id):
-                rbx.buy_asset(item_id)
-                print(f"Item {item_id} has been purchased!")
+                if rbx.get_user()['Robux'] < price:
+                    print(f"You don't have enough robux to buy {item_id} item.")
+                else:
+                    rbx.buy_asset(item_id)
+                    print(f"Item {item_id} has been purchased!")
         time.sleep(60)
 
 # item u want to buy
