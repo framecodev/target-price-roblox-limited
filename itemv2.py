@@ -10,11 +10,16 @@ def get_item_price(item_id):
     url = f'https://economy.roblox.com/v1/assets/{item_id}/resellers'
     response = requests.get(url)
     data = response.json()
+    lowest_price = None
     if 'data' in data and len(data['data']) > 0:
-        return data['data'][0]['price']
-    return None
+        for reseller in data['data']:
+            price = reseller['price']
+            if lowest_price is None or price < lowest_price:
+                lowest_price = price
+    return lowest_price
 
 def check_item_price(item_id, target_price):
+    print("The program checker is running")
     rbx = RobloxAPI()
     with open('WARNING.json') as file:
         cookie_data = json.load(file)
